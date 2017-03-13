@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="com.test.corelocationplugin"
+        version="1.0.0">
+
+  <name>CoreLocationPlugin</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/CoreLocationPlugin.js" target="js/CoreLocationPlugin.js"/>
+
+  <js-module src="www/CoreLocationPlugin.js" name="CoreLocationPlugin">
+    <clobbers target="CoreLocationPlugin" />
+  </js-module>
+
+  <platform name="ios">
+
+    <config-file target="config.xml" parent="/widget">
+      <feature name="CoreLocationPlugin">
+        <param name="ios-package" value="CoreLocationPlugin" />
+        <param name="onload" value="true" />
+      </feature>
+    </config-file>
+
+    <config-file platform="ios" target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
+      <string>CoreLocationPlugin Test</string>
+    </config-file>
+
+    <header-file src="src/ios/Cordova/CoreLocationPlugin.h" />
+    <source-file src="src/ios/Cordova/CoreLocationPlugin.m" />
+    <header-file src="src/ios/AppDelegate+CoreLocationPlugin.h" />
+    <source-file src="src/ios/AppDelegate+CoreLocationPlugin.m" />
+    <header-file src="src/ios/iBeaconManager.h" />
+    <source-file src="src/ios/iBeaconManager.m" />
+
+    <framework src="CoreBluetooth.framework" />
+    <framework src="CoreData.framework" />
+    <framework src="CoreGraphics.framework" />
+    <framework src="CoreLocation.framework" />
+    <framework src="CoreText.framework" />
+    <framework src="libc++.dylib" />
+    <framework src="libicucore.dylib" />
+    <framework src="libz.dylib" />
+    <framework src="SystemConfiguration.framework" />
+    <framework src="Security.framework" />
+  </platform>
+</plugin>
