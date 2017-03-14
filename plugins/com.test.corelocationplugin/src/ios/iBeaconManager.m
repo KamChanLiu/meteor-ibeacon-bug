@@ -67,7 +67,7 @@
 }
 
 - (void)self_start {
-    NSArray *uuids = @[@"156c86fd-9b3e-4909-9f49-765f05392291", @"6a4ddc43-3ec8-42ea-a2df-a1cbb5cdea45", @"5ae7fccf-89c3-4be5-9828-f586b6f3c2c1", @"b3094c9c-0cfa-48f5-bad0-04b175582b66",
+    NSArray *uuids = @[@"b7d1027d-6788-416e-994f-ea11075f1765", @"6a4ddc43-3ec8-42ea-a2df-a1cbb5cdea45", @"5ae7fccf-89c3-4be5-9828-f586b6f3c2c1", @"b3094c9c-0cfa-48f5-bad0-04b175582b66",
                        @"f5a5e2f6-db5f-4ccd-b83b-cfff64d32a8f", @"6f4cdedb-9b61-42fe-9991-ea9b3cb0c7cc", @"3f49618f-268b-46f8-b44b-20f36ee3aa90", @"cd02e378-1957-402a-9a9f-daeccb002aa4",
                        @"e18e79a6-8cd7-44a0-b2d1-18be95c326c9", @"8ac60db6-7d39-436d-967a-ffee43c69b5c", @"19bca05d-cba6-497d-8c6a-1367feb40a57", @"dbe11f9d-b685-4299-bbb8-5a6608d96367"];
     if (!managerStarted) {
