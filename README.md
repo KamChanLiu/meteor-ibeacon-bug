@@ -11,7 +11,7 @@ This class is initialised from the AppDelegate's _didFinishLaunchingWithOptions_
 A physical device is required to reproduce this issue along with a device which can emit the iBeacon signal (an iPhone, a newer Android device or a bluetooth beacon).
 
 1. On the beacon device, setup the beacon signal and start broadcasting as described below.
-2. Clone the repository and run for ios `meteor run ios-device`.
+2. Clone the repository, run `npm install`, then run for ios `meteor run ios-device`.
 3. Connect the other device to the development machine (ensuring Bluetooth is enabled).
 4. Start the application on the device through XCode (you may need to select a Team for code signing).
 5. App hangs on splash screen.

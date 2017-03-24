@@ -37,7 +37,7 @@
         [self requestMoreBackgroundExecutionTime];
     }
 
-    [[iBeaconManager shared] start];
+    // [[iBeaconManager shared] start];
     return [self xxx_application:application didFinishLaunchingWithOptions:launchOptions];
 
 }
