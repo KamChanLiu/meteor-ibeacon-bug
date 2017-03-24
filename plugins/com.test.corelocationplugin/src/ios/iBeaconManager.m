@@ -59,7 +59,7 @@
     if (managerStarted) {
         managerStarted = NO;
         for (CLBeaconRegion* region in self.beaconRegions) {
-            [self stopMonitoringForRegion:region];
+            // [self stopMonitoringForRegion:region];
             [self stopRangingBeaconsInRegion:region];
         }
         [self.beaconRegions removeAllObjects];

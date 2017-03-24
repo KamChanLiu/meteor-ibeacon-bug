@@ -65,10 +65,12 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     NSLog(@"CoreLocationPlugin %s", __func__);
+    [[iBeaconManager shared] stop];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     NSLog(@"CoreLocationPlugin %s", __func__);
+    [[iBeaconManager shared] start];
 }
 
 @end
